@@ -1,11 +1,14 @@
 import flet as ft
-from storage.data.text import mitteltitel, text1
+from storage.data.text import titel1, text1
 from storage.data.leftchildren import left_children
 
 
 if __name__=='__main__':
     def main(page: ft.Page):
         page.title = "Website test"
+
+        def show_selection(button_klicked, page):
+            pass
 
 
 
@@ -29,7 +32,7 @@ if __name__=='__main__':
 
         middle_bar = ft.Container(expand=True, bgcolor="blue", padding=20,
                                   content = ft.Column(
-                                      controls=[mitteltitel,text1],
+                                      controls=[titel1, text1],
                                       horizontal_alignment=ft.CrossAxisAlignment.CENTER
                                   ))
 
